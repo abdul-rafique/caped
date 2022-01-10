@@ -13,12 +13,18 @@
     <script src="{{ asset('js/app.js') }}" differ></script>
 </head>
 <body class="font-sans antialiased">
-    <div class="min-h-screen">
+    <div class="min-h-screen flex">
         <!-- Sidebar -->
         <x-side-bar />
 
-        <!-- Topbar -->
-        <x-app-bar />
+        <div class="flex flex-1 flex-col">
+            <!-- Topbar -->
+            <x-app-bar />
+
+            <main class="flex-1 p-5">
+                Main
+            </main>
+        </div>
     </div>
 </body>
 </html>
