@@ -1,4 +1,4 @@
-<div class="min-h-screen w-1/5 max-w-xs min-w-max flex flex-col items-center py-10 shadow-md">
+<div class="min-h-screen w-1/5 max-w-xs min-w-max flex flex-col items-center py-10 shadow-md z-50">
     <div >
         <img src="{{ asset('images/logo.svg') }}" alt="Logo" >
     </div>
