@@ -26,5 +26,19 @@
             </main>
         </div>
     </div>
+
+    <script>
+        var sidebarContainer = document.querySelector('#sidebar');
+        var sidebarTrigger = document.querySelector('#sidebar-trigger');
+        var sidebarCloseTrigger = document.querySelector('#sidebar-close-trigger');
+
+        sidebarTrigger.addEventListener('click', function(){
+            sidebarContainer.classList.remove('-translate-x-full')
+        });
+
+        sidebarCloseTrigger.addEventListener('click', function(){
+            sidebarContainer.classList.add('-translate-x-full')
+        });
+    </script>
 </body>
 </html>

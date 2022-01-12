@@ -1,5 +1,10 @@
-<div class="min-h-screen w-1/5 max-w-xs min-w-max flex flex-col items-center py-10 shadow-md z-50">
-    <div >
+<div class="min-h-screen w-1/5 max-w-xs min-w-max flex flex-col items-center py-10 bg-white shadow-md absolute -translate-x-full z-40 lg:relative lg:translate-x-0" id="sidebar">
+    <!-- Sidebar Close Trigger -->
+    <button type="button" class="p-1 absolute right-3 top-3 lg:hidden" id="sidebar-close-trigger">
+        <img src="{{ asset('images/close-outline.svg') }}" alt="Close" class="w-8">
+    </button>
+
+    <div class="mt-5 lg:mt-0">
         <img src="{{ asset('images/logo.svg') }}" alt="Logo" >
     </div>
 

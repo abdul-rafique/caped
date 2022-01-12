@@ -6,17 +6,14 @@ use Illuminate\View\Component;
 
 class IconLink extends Component
 {
-    public $src;
-    public $alt;
+
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($src, $alt)
+    public function __construct()
     {
-        $this->src = $src;
-        $this->alt = $alt;
     }
 
     /**
