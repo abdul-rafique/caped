@@ -21,24 +21,43 @@
             <!-- Topbar -->
             <x-app-bar />
 
-            <main class="p-10">
+            <main class="p-3 md:p-5">
                 {{ $slot }}
             </main>
         </div>
     </div>
 
     <script>
+        // Sidebar opening and closing for small devices
         var sidebarContainer = document.querySelector('#sidebar');
         var sidebarTrigger = document.querySelector('#sidebar-trigger');
         var sidebarCloseTrigger = document.querySelector('#sidebar-close-trigger');
 
         sidebarTrigger.addEventListener('click', function(){
-            sidebarContainer.classList.remove('-translate-x-full')
+            sidebarContainer.classList.add('transition-transform');
+            sidebarContainer.classList.add('duration-300');
+            sidebarContainer.classList.remove('-translate-x-full');
         });
 
         sidebarCloseTrigger.addEventListener('click', function(){
-            sidebarContainer.classList.add('-translate-x-full')
+            sidebarContainer.classList.add('-translate-x-full');
         });
+
+        // Searchbox Trigger for small devices
+        var searchBox = document.querySelector('#searchBox');
+        var searchBoxTrigger = document.querySelector('#searchBoxTrigger');
+        var searchBoxCloseTrigger = document.querySelector('#searchBoxCloseTrigger');
+        var brandName = document.querySelector('#brandName');
+
+        searchBoxTrigger.addEventListener('click', function(){
+            searchBox.classList.remove('hidden');
+            searchBox.classList.add('absolute', 'z-100', 'inset-x-3', 'inset-y-2');
+        })
+
+        searchBoxCloseTrigger.addEventListener('click', function(){
+            searchBox.classList.add('hidden');
+            searchBoxTrigger.classList.remove('hidden');
+        })
     </script>
 </body>
 </html>

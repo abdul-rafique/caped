@@ -4,9 +4,7 @@
         <img src="{{ asset('images/close-outline.svg') }}" alt="Close" class="w-8">
     </button>
 
-    <div class="mt-5 lg:mt-0">
-        <img src="{{ asset('images/logo.svg') }}" alt="Logo" >
-    </div>
+    <x-brand-name class="hidden lg:block" />    
 
     <h2 class="font-bold text-3xl mt-16">{{ __('Explore') }}</h2>
 
