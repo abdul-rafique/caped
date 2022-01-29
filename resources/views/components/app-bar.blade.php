@@ -24,10 +24,10 @@
     <div class="flex items-center ml-5">
         <!-- Main Navigations -->
         <div class="hidden xl:flex">
-            <x-topbar-link text="Products" />
-            <x-topbar-link text="Story" />
-            <x-topbar-link text="Manufacturing" />
-            <x-topbar-link text="Packaging" />
+            <x-topbar-link href="/products" text="Products"  />
+            <x-topbar-link href="!#" text="Story"  />
+            <x-topbar-link href="!#" text="Manufacturing"  />
+            <x-topbar-link href="!#" text="Packaging"  />
         </div>
         <!-- Search, Cart and Login Links -->
         <button type="button" class="relative mr-5 lg:hidden" id="searchBoxTrigger">
@@ -49,9 +49,9 @@
 <div class="flex xl:hidden items-center justify-center py-2 px-2 shadow">
     <!-- Main Navigations -->
     <div class="flex flex-wrap justify-center">
-        <x-topbar-link text="Products" />
-        <x-topbar-link text="Story" />
-        <x-topbar-link text="Manufacturing" />
-        <x-topbar-link text="Packaging" />
+        <x-topbar-link href="/products" text="Products" />
+        <x-topbar-link href="!#" text="Story"  />
+        <x-topbar-link href="!#" text="Manufacturing"  />
+        <x-topbar-link href="!#" text="Packaging"  />
     </div>
 </div>

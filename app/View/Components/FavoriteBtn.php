@@ -4,19 +4,16 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class TopbarLink extends Component
+class FavoriteBtn extends Component
 {
-    public $href;
-    public $text;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($href, $text)
+    public function __construct()
     {
-        $this->href = $href;
-        $this->text = $text;
+        //
     }
 
     /**
@@ -26,6 +23,6 @@ class TopbarLink extends Component
      */
     public function render()
     {
-        return view('components.topbar-link');
+        return view('components.favorite-btn');
     }
 }

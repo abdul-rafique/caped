@@ -11,8 +11,11 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" differ></script>
 </head>
-<body class="min-h-screen flex flex-col items-center justify-center">
-    <h1 class="text-5xl mb-5">Home Page</h1>
-    <a href="/products" class="text-lg">Go To Products Page &rightarrow;</a>
+<body class="">
+    <x-app-bar />
+    <div class="min-h-screen flex flex-col items-center justify-center">
+        <h1 class="text-5xl mb-5">Home Page</h1>
+        <a href="/products" class="text-lg">Go To Products Page &rightarrow;</a>
+    </div>
 </body>
 </html>
